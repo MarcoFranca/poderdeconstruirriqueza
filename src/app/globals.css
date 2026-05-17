@@ -128,3 +128,23 @@
     @apply font-sans;
   }
 }
+
+/* Cursor padrão para elementos clicáveis */
+@layer base {
+  button,
+  [type="button"],
+  [type="submit"],
+  [role="button"],
+  .btn {
+    @apply cursor-pointer;
+  }
+
+  /* Estados desabilitados (inclui padrões do shadcn) */
+  button:disabled,
+  [type="button"]:disabled,
+  [type="submit"]:disabled,
+  [aria-disabled="true"],
+  [data-disabled="true"] {
+    @apply cursor-not-allowed;
+  }
+}
