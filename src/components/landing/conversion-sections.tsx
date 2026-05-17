@@ -108,7 +108,7 @@ export function LocationSection() {
                     <div className="relative overflow-hidden border border-[#E8C66A]/25 bg-[#0B0705]/70 p-3 shadow-[0_50px_140px_-80px_rgba(232,198,106,.5)]">
                         <div className="relative aspect-[1.05] overflow-hidden">
                             <Image
-                                src="/assets/mac-niteroi.jpg"
+                                src="/assets/Museu1.jpg.jpeg"
                                 alt="MAC Niterói"
                                 fill
                                 className="object-cover"
@@ -190,79 +190,113 @@ export function LocationSection() {
 }
 
 export function PricingSection() {
+    const ticketItems = [
+        "Acesso a todas as palestras",
+        "Sunset Brunch Experience completo",
+        "Networking com mulheres empreendedoras",
+        "Experiência exclusiva no MAC Niterói",
+    ]
+
     return (
         <section
             id="ingresso"
             className="relative overflow-hidden bg-[#080504] px-6 py-28 text-[#FFF6DF] md:px-8"
         >
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(232,198,106,0.12),transparent_30%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(232,198,106,0.14),transparent_34%),radial-gradient(circle_at_20%_85%,rgba(162,113,19,0.1),transparent_34%)]" />
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#E8C66A]/35 to-transparent" />
 
-            <div className="relative z-10 mx-auto max-w-[820px]">
-                <Reveal className="text-center">
-                    <SectionLabel>Garanta sua presença</SectionLabel>
+            <div className="relative z-10 mx-auto max-w-[920px]">
+                <Reveal className="mx-auto max-w-3xl text-center">
+                    <SectionLabel>Ingresso</SectionLabel>
 
-                    <h2 className="font-serif text-[clamp(2.4rem,4vw,4.6rem)] leading-[1.02] tracking-[-0.045em]">
-                        O próximo nível da sua vida financeira começa com uma decisão.
+                    <h2 className="font-serif text-[clamp(2.05rem,3.4vw,3.85rem)] leading-[1.05] tracking-[-0.045em]">
+                        Garanta sua presença no{" "}
+                        <span className="block bg-gradient-to-r from-[#FFF0B7] via-[#E8C66A] to-[#A27113] bg-clip-text italic text-transparent">
+              1º lote.
+            </span>
                     </h2>
-
-                    <p className="mx-auto mt-7 max-w-2xl text-[1rem] leading-8 text-[#FFF6DF]/72">
-                        Você pode continuar vivendo da mesma forma ou escolher entrar em um
-                        ambiente que expande sua visão, posicionamento e prosperidade.
-                    </p>
                 </Reveal>
 
                 <Reveal delay={0.1}>
-                    <div className="relative mt-14 overflow-hidden border border-[#E8C66A]/28 bg-[#0B0705]/80 p-10 text-center shadow-[0_60px_160px_-90px_rgba(232,198,106,.55)] backdrop-blur-xl">
-                        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#E8C66A]/50 to-transparent" />
+                    <div className="relative mx-auto mt-14 max-w-[560px]">
+                        <div className="absolute -inset-8 bg-[#E8C66A]/10 blur-3xl" />
 
-                        <p className="text-[10px] font-black uppercase tracking-[0.34em] text-[#E8C66A]">
-                            Ingresso individual
-                        </p>
+                        <div className="relative border border-[#E8C66A]/35 bg-gradient-to-b from-[#211607]/95 via-[#120B07]/95 to-[#080504]/95 p-[1px] shadow-[0_60px_180px_-95px_rgba(232,198,106,.75)]">
+                            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#FFF0B7]/70 to-transparent" />
+                            <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#E8C66A]/10 blur-3xl" />
+                            <div className="absolute -bottom-28 -left-24 h-72 w-72 rounded-full bg-[#A27113]/14 blur-3xl" />
 
-                        <div className="mt-7">
-              <span className="font-serif text-7xl italic text-[#FFF6DF]">
-                R$ 497
-              </span>
-                        </div>
-
-                        <p className="mt-5 text-sm text-[#FFF6DF]/58">
-                            Experiência presencial + brunch + networking + conteúdo
-                        </p>
-
-                        <div className="mt-10 grid gap-4 border-y border-[#E8C66A]/12 py-8 text-left md:grid-cols-3">
-                            <div className="flex items-center gap-3">
-                                <CalendarDays className="size-5 text-[#E8C66A]" />
-                                <span className="text-sm text-[#FFF6DF]/72">
-                  26 de Junho
+                            <div className="relative px-7 py-9 text-center md:px-10 md:py-10">
+                <span className="inline-flex border border-[#E8C66A]/45 bg-[#050302]/50 px-4 py-2 text-[9px] font-black uppercase tracking-[0.3em] text-[#E8C66A]">
+                  Vagas limitadas · 1º lote
                 </span>
+
+                                <p className="mt-7 text-[10px] font-black uppercase tracking-[0.32em] text-[#FFF6DF]/54">
+                                    Ingresso individual
+                                </p>
+
+                                <div className="mt-7 overflow-visible">
+                                    <p className="text-[10px] font-bold uppercase tracking-[0.26em] text-[#FFF6DF]/42">
+                                        Por apenas
+                                    </p>
+
+                                    <p className="mt-3 font-serif text-lg text-[#FFF6DF]/42 line-through decoration-[#E8C66A]/50">
+                                        de R$ 397,00
+                                    </p>
+
+                                    <div className="mt-2 flex items-center justify-center gap-2 overflow-visible py-3">
+                    <span className="font-serif text-2xl leading-none text-[#E8C66A]">
+                      R$
+                    </span>
+
+                                        <span className="inline-block overflow-visible bg-gradient-to-b from-[#FFF6C8] via-[#E8C66A] to-[#A27113] bg-clip-text px-2 py-2 font-serif text-[clamp(4.4rem,7.5vw,5.9rem)] leading-[1.12] tracking-[-0.035em] text-transparent">
+                      197
+                    </span>
+
+                                        <span className="font-serif text-2xl leading-none text-[#FFF6DF]/70">
+                      ,00
+                    </span>
+                                    </div>
+
+                                    <p className="mt-1 font-serif text-base italic text-[#FFF6DF]/62">
+                                        Pagamento único — garanta agora o melhor valor.
+                                    </p>
+                                </div>
+
+                                <div className="relative my-8 h-px bg-[linear-gradient(90deg,transparent,rgba(232,198,106,.35),transparent)]">
+                                    <span className="absolute left-[-2.75rem] top-1/2 size-7 -translate-y-1/2 rounded-full border border-[#E8C66A]/25 bg-[#080504]" />
+                                    <span className="absolute right-[-2.75rem] top-1/2 size-7 -translate-y-1/2 rounded-full border border-[#E8C66A]/25 bg-[#080504]" />
+                                </div>
+
+                                <ul className="mx-auto max-w-[400px] space-y-3.5 text-left">
+                                    {ticketItems.map((item) => (
+                                        <li
+                                            key={item}
+                                            className="flex items-start gap-4 text-[0.92rem] leading-7 text-[#FFF6DF]/76"
+                                        >
+                      <span className="mt-1.5 grid size-5 shrink-0 place-items-center rounded-full border border-[#E8C66A]/45 bg-[#E8C66A]/10">
+                        <Check className="size-3 text-[#E8C66A]" />
+                      </span>
+
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+
+                                <Button
+                                    asChild
+                                    className="mt-9 h-14 w-full rounded-none bg-gradient-to-r from-[#FFE58F] via-[#E8C66A] to-[#A27113] px-8 text-[0.68rem] font-black uppercase tracking-[0.22em] text-[#120B07] shadow-[0_28px_90px_-34px_rgba(232,198,106,.95)] hover:brightness-110 md:max-w-[460px]"
+                                >
+                                    <Link href="#">
+                                        Quero garantir essa experiência
+                                        <ArrowRight className="size-4" />
+                                    </Link>
+                                </Button>
+
+                                <p className="mt-5 text-[0.75rem] text-[#FFF6DF]/48">
+                                    ⚠️ Vagas limitadas — encontro intimista e exclusivo.
+                                </p>
                             </div>
-
-                            <div className="flex items-center gap-3">
-                                <Clock3 className="size-5 text-[#E8C66A]" />
-                                <span className="text-sm text-[#FFF6DF]/72">17h</span>
-                            </div>
-
-                            <div className="flex items-center gap-3">
-                                <MapPin className="size-5 text-[#E8C66A]" />
-                                <span className="text-sm text-[#FFF6DF]/72">
-                  MAC Niterói
-                </span>
-                            </div>
-                        </div>
-
-                        <Button
-                            asChild
-                            className="mt-10 h-16 rounded-none bg-gradient-to-r from-[#FFE58F] via-[#E8C66A] to-[#A27113] px-10 text-[0.72rem] font-black uppercase tracking-[0.24em] text-[#120B07] hover:brightness-110"
-                        >
-                            <Link href="#">
-                                Quero garantir minha vaga
-                                <ArrowRight className="size-4" />
-                            </Link>
-                        </Button>
-
-                        <div className="mt-8 flex items-center justify-center gap-3 text-[11px] uppercase tracking-[0.22em] text-[#FFF6DF]/52">
-                            <ShieldCheck className="size-4 text-[#E8C66A]" />
-                            Vagas limitadas
                         </div>
                     </div>
                 </Reveal>
