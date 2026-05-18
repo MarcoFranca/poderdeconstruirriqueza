@@ -287,7 +287,7 @@ export function PricingSection() {
                                     asChild
                                     className="mt-9 h-14 w-full rounded-none bg-gradient-to-r from-[#FFE58F] via-[#E8C66A] to-[#A27113] px-8 text-[0.68rem] font-black uppercase tracking-[0.22em] text-[#120B07] shadow-[0_28px_90px_-34px_rgba(232,198,106,.95)] hover:brightness-110 md:max-w-[460px]"
                                 >
-                                    <Link href="#">
+                                    <Link href="https://pay.hotmart.com/E105886330V">
                                         Quero garantir essa experiência
                                         <ArrowRight className="size-4" />
                                     </Link>
