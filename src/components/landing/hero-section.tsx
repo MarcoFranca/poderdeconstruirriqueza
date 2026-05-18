@@ -133,15 +133,15 @@ export function HeroSection() {
             />
 
             {/* SIDE LINE */}
-            <div className="absolute left-16 top-[30%] z-[2] hidden h-[420px] w-px bg-gradient-to-b from-transparent via-[#E8C66A]/40 to-transparent xl:block" />
+            <div className="absolute left-16 top-[30%] z-[2] hidden h-[420px] w-px bg-gradient-to-b from-transparent via-[#E8C66A]/40 to-transparent 2xl:block" />
 
             {/* SIDE TEXT */}
-            <div className="absolute left-16 top-[55%] z-[2] hidden origin-left -rotate-90 items-center gap-6 xl:flex">
+            <div className="absolute left-16 top-[55%] z-[2] hidden origin-left -rotate-90 items-center gap-6 2xl:flex">
                 <span className="h-px w-14 bg-[#E8C66A]/50" />
 
                 <span className="text-[10px] font-semibold uppercase tracking-[0.42em] text-[#E8C66A]">
-          26 de Junho · MAC Niterói
-        </span>
+    26 de Junho · MAC Niterói
+  </span>
 
                 <span className="h-px w-14 bg-[#E8C66A]/50" />
             </div>
